@@ -1,2 +1,3 @@
 # HeapSort
-Implement heapSort 
+Implement heapSort using generics and comparables
+
