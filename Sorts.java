@@ -38,32 +38,32 @@ public class Sorts {
 
    {
 
-       int biggest = i; 
+       int greater = i; 
        int l = 2*i + 1; 
 
        int r = 2*i + 2; 
 
 
-       if (l < n && arr[l].compareTo(arr[biggest]) > 0)
+       if (l < n && arr[l].compareTo(arr[greater]) > 0)
 
-           biggest = l;
+           greater = l;
 
 
-       if (r < n && arr[r].compareTo(arr[biggest]) > 0)
+       if (r < n && arr[r].compareTo(arr[greater]) > 0)
 
-           biggest = r;
+           greater = r;
 
-       if (biggest != i)
+       if (greater != i)
 
        {
 
            T swap = arr[i];
 
-           arr[i] = arr[biggest];
+           arr[i] = arr[greater];
 
-           arr[biggest] = swap;
+           arr[greater] = swap;
 
-           MaxHeap(arr, n, biggest);
+           MaxHeap(arr, n, greater);
 
        }
 
